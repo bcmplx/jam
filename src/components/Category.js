@@ -8,10 +8,11 @@ const Category = ({children, artist}) => {
     // .then(values => {
     //     console.log(values.results[0].artist_name);
     //     artist = values.results[0].artist_name;
+    const classname = children.toLowerCase() + ' artist_info nodisplay'
         
     // })
     return (
-        <div className="artist_info" style={{
+        <div className={classname} style={{
                 backgroundColor: 'blue',
                 width: '50%',
                 }}>
@@ -22,8 +23,9 @@ const Category = ({children, artist}) => {
                 <li>URL:</li>
                 <li>img</li>
             </ul>
+            
         </div>
-
+        
     )
     // console.log(props.children)
     
